@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mad Driver</title>
+    <meta charset="utf-8">
+
+    <style>
+
+    #playground{
+      width: 800px;
+      height: 400px;
+      border-width: 11px;
+      border-color: black;
+      border-style: solid;
+      border-width: 1px;
+      top: 0;
+      left: 0;
+      position: relative;
+      z-index: 100;
+      overflow: hidden;
+    }
+
+    #backgroundImg {
+      position: absolute;
+      z-index: -100;
+      top: 183px;
+      left: 0px;
+    }
+
+    #car {
+      width: 60px;
+      height: 31px;
+      left: 140px;
+      top: 200px;
+      position: absolute;
+      z-index: 500;
+    }
+
+    #score {
+      color: #000000;
+      font-size: 30px;
+    }
+
+    body {
+      background: #009933;
+      z-index: -1000;
+    }
+
+    h1 {
+      text-align: center;
+      text-shadow: black 1px 1px;
+      color: 	#cc0000;
+    }
+
+    </style>
+
+  </head>
+
+  <body>
+
+    <h1>Mad Driver</h1>
+
+    <center>
+      <p id="score"></p>
+
+      <div id="playground" style="display: block;">
+        <img src="Road.png" id="backgroundImg">
+        <div id="car">
+          <img id="carImg" src="playerCarGreen.png" alt="">
+        </div>
+
+      </div>
+
+      <div id="settings">
+      </div>
+
+    </center>
+
+
+    <script src="./jquery.js"></script>
+    <script src="./road.js"></script>
+    <script src="./car.js"></script>
+    <script src="./Sound.js"></script>
+    <script src="./AICarGenerator.js"></script>
+    <script src="./manager.js"></script>
+
+  </body>
+
+</html>
