@@ -39,7 +39,7 @@ var gameManager = setInterval(function(){
       if (!hasPlayBoum) {
         boumSound.play();
       }
-      $("#score").text ("Appuyez sur entrée");
+      document.getElementById("panel").style.display = "block";
       backgroundMusic.stop();
 
       if (car.pressedKeys[car.KEY.ENTER]) {
@@ -49,6 +49,8 @@ var gameManager = setInterval(function(){
       $("#playground").css({
         "background": "#6b6a6a",
       });
+
+      document.getElementById("panel").style.display = "none";
       if (beginGame) {
         $("#score").text ("Score: " + score.toString());
       }

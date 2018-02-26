@@ -41,6 +41,25 @@
       font-size: 30px;
     }
 
+    #panel {
+      top: 75px;
+      left: 300px;
+      width: 210px;
+      height: 25px;
+      background: purple;
+      z-index: 2000;
+      position: absolute;;
+      display: none;
+    }
+
+    #panelText {
+      font-size: 20px;
+      color: white;
+      position: absolute;
+      top: -20px;
+      left: 7px;
+    }
+
     body {
       background: #009933;
       z-index: -1000;
@@ -64,13 +83,16 @@
       <p id="score"></p>
 
       <div id="playground" style="display: block;">
+
         <img src="Road.png" id="backgroundImg">
         <div id="car">
           <img id="carImg" src="playerCarGreen.png" alt="">
         </div>
 
       </div>
-
+      <div id="panel">
+        <p id="panelText">Appuyez sur entrée</p>
+      </div>
       <div id="settings">
       </div>
 
